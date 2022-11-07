@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="pt-5">
+    <!-- Navbar'ın içerik ile birleşmemesi için Body'e "padding" verildi. -->
+
+    <!-- NAVBAR START !!! -->
+    <nav class="navbar navbar-expand-sm navbar-light border">
+      <div class="logo">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon mr-5"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse d-flex justify-content-center ml-5">
+        <!-- d-flex justify-content-center: d-flex ile "Search Button" ortaya alındı.| ml-5 : soldan 5 birim margin verildi."-->
+        <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
+          <input
+            class="form-control mr-sm-2 search"
+            type="search"
+            placeholder="Ara"
+            style="font-family: Arial, FontAwesome; height: 28px; width: 216px"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+      <div class="collapse navbar-collapse ml-5 mt-2 d-sm-none d-md-block">
+        <!-- ml-5 mt-2: Sağ üstte yer alan menü kısmına soldan 5 birim üstten 2 birim margin verildi. | d-sm-none d-md-block: Sağ üstte yer alan menü kısmına sayfa "sm" boyutunda olunca kaybolacak şekilde display verildi. -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ><i
+                class="fas fa-home fa-lg mr-2 d-none d-sm-block mt-1"
+                style="color: #000000"
+              >
+              </i>
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i
+                class="fab fa-facebook-messenger fa-lg mr-2 mt-1"
+                style="color: #000000"
+              ></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i
+                class="far fa-compass fa-lg mr-2 mt-1"
+                style="color: #000000"
+              ></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i
+                class="far fa-heart fa-lg mr-2 mt-1"
+                style="color: #000000"
+              ></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.instagram.com/batincaylak/"
+              target="_blank"
+              ><img
+                src="assets/rookie.JPG"
+                class="mb-2"
+                style="width: 23px; height: 23px; border-radius: 50%"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR END !!! -->
+
+    <!-- STORY START !!!-->
+    <div class="container middlearea mt-4 offset-2" style="max-height: 200px !important;"> <!-- max-height: 200px !important: Class'da belirttiğimiz "middlearea" içinde maksimum yükseklik 200px yapıldı ve bu important ile yazıldı. -->
+
+      <div class="row"> <!-- CSS belirli uygulanan bir stili öncelikli duruma getirmek için kullanabileceğimiz bir önem derecesidir. -->
+        <div class="col-xs-6 col-sm-12 col-md-6"> <!-- col-xs-6 col-sm-12 col-md-6 : Bu alanın col'unun default değerini 12, diğer tüm ölçekleri ise 6 olarak ayarlandı. (col-d idi.)-->
+          <div class="card">
+            <div class="card-body d-flex"> <!-- d-flex: Esnek kutu. -->
+              <a href="https://www.instagram.com/spacex/" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/spacex.jpg"
+                class="storyphoto img-fluid mr-3"
+              />
+              <span class="storytext">spacex</span>
+              </a>
+              <a href="https://www.instagram.com/muhammadali/" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/ali.jpg"
+                class="storyphoto img-fluid"
+              />
+              <span class="storytext">muhammadali</span>
+            </a>
+              <a href="https://www.instagram.com/joebiden/" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/joebiden.jpg"
+                class="storyphoto img-fluid"
+              />
+              <span class="storytext">joebiden</span>
+            </a>
+              <a href="https://www.instagram.com/jeffbezos/" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/jeffbezos.jpg"
+                class="storyphoto img-fluid"
+              />
+            <span class="storytext">jeffbezos</span>
+            </a>
+              <a href="https://www.instagram.com/zuck/" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/zuckerberg.jpg"
+                class="storyphoto img-fluid"
+              />
+            <span class="storytext mr-2">zuck</span>
+            </a>
+              <a href="https://www.instagram.com/thisisbillgates/" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/billgates.jpg"
+                class="storyphoto img-fluid"
+              />
+            <span class="storytext">thisisbillgates</span>
+            </a>
+              <a href="https://twitter.com/elonmusk" style="text-decoration: none;" target="_blank">
+              <img
+                src="assets/elonmusk.jpg"
+                class="storyphoto img-fluid"
+              />
+                <span class="storytext">elonmusk</span>
+            </a>
+            </div>
+          </div>
+    <!-- STORY END !!!-->
+    
+    <!-- CONTENT START !!!-->
+    <div class="card mt-5"> <!-- mt-5: Paylaşım container'ın dış çerçeve üstünden 5 birim boşluk bırakıldı. -->
+      <div class="card-header">
+        <img
+          src="assets/elonmusk.jpg"
+          class="mr-2"
+          style="width: 35px; height: 35px; border-radius: 50%"
+        />
+        <span class="postuserfont"><strong><a href="https://twitter.com/elonmusk" target="_blank" style="color: black;">elonmusk</a></strong></span>
+        <span class="mt-2"
+          ><strong><i style="float: right;" class="fas fa-ellipsis-h"></i></strong
+        ></span> <!-- float: right: İçerik kısmında (...) sağa kaydırıldı. -->
+      </div>
+      <img
+        src="https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD"
+        class="card-img-top"
+        alt="..."
+      />
+
+      <ul
+      class="list-group list-group-horizontal mt-1"
+      style="list-style-type: none;border:none" 
+    > <!-- border:none: Beğenme, yorum yapma, paylaşma kısmında border kaldırıldı. -->
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><i
+            class="far fa-heart fa-lg"
+            style="
+            color: black; 
+            position: relative; 
+            font-size: 23px;
+            margin-left: 11px;
+            "
+          ></i
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><i
+            class="far fa-comment fa-lg"
+            style="
+              color: black;
+              position: relative;
+              font-size: 23px;
+              margin-left: 11px;
+            "
+          ></i
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><i
+            class="far fa-paper-plane fa-lg"
+            style="
+              color: black;
+              position: relative;
+              font-size: 23px;
+              margin-left: 11px;
+            "
+          ></i
+        ></a>
+      </li>
+      <span class="offset-7"> <!-- offset-7: Bookmark ikonu offset 7 birim. -->
+        <li class="nav-item ml-4">
+          <a class="nav-link ml-2" href="#"
+            ><i
+              class="far fa-bookmark fa-lg"
+              style="color: black; position: relative; font-size: 23px"
+            ></i
+          ></a>
+        </li>
+      </span>
+    </ul>
+    <span>
+        <img
+                src="assets/billgates.jpg"
+                class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%;"
+              />
+              <span class="postuserfont"
+                ><strong>billgates</strong> ve
+                <strong>1.938.252 diğer kişi</strong> beğendi</span
+              >
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >elonmusk</strong
+                >Coming Soon...
+              </p>
+              <a href="#" style="text-decoration: none"
+                ><p
+                  class="card-text postuserfont"
+                  style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  "
+                >
+                  100.245 yorumun tümünü gör
+                </p></a
+              >
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >billgates</strong
+                >🚀
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >jeffbezos</strong
+                >That's wonderful🔥
+              </p>
+              <p
+                class="card-text"
+                style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                "
+              >
+                20 SAAT ÖNCE
+              </p>
+            </div>
+            <div
+              class="card-footer"
+              style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+                border: none; 
+              "
+            > <!-- border: none: Yorum ekleme yerinden "border" kaldırıldı. -->
+
+            <span style="margin-left: -4px">Yorum Ekle...</span  
+            ><span class="" style="color: #0095f6; opacity: 50%; float: right;"
+                ><strong><a href="#">Paylaş</a></strong></span
+              > <!-- float: right:	Yorum ekleme kısmındaki paylaş metni sağa alındı. -->
+            </div>
+          </div>
+
+          <div class="card mt-5"> <!-- mt-5: Paylaşım container'ın dış çerçeve üstünden 5 birim boşluk bırakıldı. -->
+            <div class="card-header">
+              <img
+                src="assets/joebiden.jpg"
+                class="mr-2"
+                style="width: 35px; height: 35px; border-radius: 50%"
+              />
+              <span class="postuserfont"><strong>joebiden</strong></span>
+              <span class="mt-2"
+                ><strong><i style="float: right;" class="fas fa-ellipsis-h"></i></strong
+              ></span> <!-- float: right: İçerik kısmında (...) sağa kaydırıldı. -->
+            </div>
+            <img
+              src="https://media.newyorker.com/photos/631208ecd450737c3a8e5589/16:9/w_2559,h_1439,c_limit/Glasser-Biden-Address.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <ul
+              class="list-group list-group-horizontal mt-1"
+              style="list-style-type: none; border:none"
+            > <!-- border:none: Beğenme, yorum yapma, paylaşma kısmında border kaldırıldı. -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-heart fa-lg"
+                    style="color: black; 
+                    position: relative; 
+                    font-size: 23px;
+                    margin-left: 11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-comment fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: 11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-paper-plane fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: 11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <span class="offset-7"> <!-- offset-7: Bookmark offset7 birim  -->
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"
+                    ><i
+                      class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"
+                    ></i
+                  ></a>
+                </li>
+              </span>
+            </ul>
+            <span>
+              <img
+                src="assets/elonmusk.jpg"
+                class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%"
+              />
+              <span class="postuserfont"
+                ><strong>elonmusk</strong> ve
+                <strong>10.800.30 diğer kişi</strong> beğendi</span
+              >
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >joebiden</strong
+                >🇺🇸 🇺🇸
+              </p>
+               <a href="#" style="text-decoration: none"
+                ><p
+                  class="card-text postuserfont"
+                  style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  "
+                >
+                  200.000 yorumun tümünü gör
+                </p></a
+              >
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >elonmusk</strong
+                >❗️
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >billgates</strong
+                >🇺🇸
+              </p>
+               <p
+                class="card-text"
+                style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                "
+              >
+                3 SAAT ÖNCE
+              </p>
+            </div>
+            <div
+              class="card-footer"
+              style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+                border: none;
+              "
+            > <!-- border: none:  (Yorum ekle) kısmından border kaldırıldı. -->
+              <span style="margin-left: -4px">Yorum Ekle...</span
+              ><span class="" style="color: #0095f6; opacity: 50%;float: right;"
+                ><strong><a href="#">Paylaş</a></strong></span
+              > <!-- float: right:	Yorum ekle kısmındaki paylaş metni sağa alındı. -->
+            </div>
+          </div>
+
+          <div class="card mt-5"> <!-- mt-5: Paylaşım container'ın dış çerçeve üstünden 5 birim boşluk bırakıldı. -->
+            <div class="card-header">
+              <img
+                src="assets/billgates.jpg"
+                class="mr-2"
+                style="width: 35px; height: 35px; border-radius: 50%"
+              />
+              <span class="postuserfont"><strong>billgates</strong></span>
+              <span class="mt-2"
+                ><strong><i style="float: right;" class="fas fa-ellipsis-h"></i></strong
+              ></span> <!-- float: right: İçerik kısmında (...) sağa kaydırıldı. -->
+            </div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg/1920px-Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <ul
+              class="list-group list-group-horizontal mt-1"
+              style="list-style-type: none; border:none"
+            > <!-- border:none: Beğenme, yorum yapma, paylaşma kısmında border kaldırıldı. -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-heart fa-lg"
+                    style="color: black; 
+                    position: relative; 
+                    font-size: 23px;
+                    margin-left: 11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-comment fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: 11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-paper-plane fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: 11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <span class="offset-7"> <!-- offset-7: Bookmark offset7 birim  -->
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"
+                    ><i
+                      class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px;  margin-left: 11px;"
+                    ></i
+                  ></a>
+                </li>
+              </span>
+            </ul>
+            <span>
+              <img
+                src="assets/elonmusk.jpg"
+                class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%"
+              />
+              <span class="postuserfont"
+                ><strong>joebiden</strong> ve
+                <strong>1.100.30 diğer kişi</strong> beğendi</span
+              >
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >billgates</strong
+                >🙋‍♂️
+              </p>
+               <a href="#" style="text-decoration: none"
+                ><p
+                  class="card-text postuserfont"
+                  style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  "
+                >
+                  600.000 yorumun tümünü gör
+                </p></a
+              >
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >elonmusk</strong
+                >🧐
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >jeffbezos</strong
+                >...
+              </p>
+               <p
+                class="card-text"
+                style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                "
+              >
+                15 SAAT ÖNCE
+              </p>
+            </div>
+            <div
+              class="card-footer"
+              style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+                border: none;
+              "
+            > <!-- border: none:  (Yorum ekle) kısmından border kaldırıldı. -->
+              <span style="margin-left: -4px">Yorum Ekle...</span
+              ><span class="" style="color: #0095f6; opacity: 50%;float: right;"
+                ><strong><a href="#">Paylaş</a></strong></span
+              > <!-- float: right:	Yorum ekle kısmındaki paylaş metni sağa alındı. -->
+            </div>
+          </div>
+        </div>
+    <!-- CONTENT END !!!-->
+
+    <!-- RIGHT PANEL START !!! -->
+        <div class="col-3">
+          <div
+            class="card col-xs-12 rightpanel bg-white"
+            id="sticky-sidebar"
+            style="width: 18rem;border: none;"
+          > <!-- bg-white: Rightpanel'de bg-color: "white". 
+                 border: none : Rightpanel'de kenarlık kaldırıldı. -->
+        </div>
+        <div class="card-body d-flex" >
+          <div>
+            <a class="nav-link" href="#"
+              >
+              <span>
+              <img
+                src="assets/rookie.JPG"
+                class=""
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  border: 2px solid rgb(238, 39, 82);
+                  margin-left: -15px;
+                "
+              /><span
+                class=""
+                style="
+                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                    'Helvetica Neue', sans-serif;
+                  font-size: 15px;
+                  color: black;
+                  margin-left: 20px;
+                "
+                ><strong>Batın Çaylak</strong>
+                </span>
+              </span>
+            </a>
+            <div class="mt-2">
+              <span
+                class="mt-5"
+                style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                    sans-serif;
+                  font-size: 15px;
+                  color: gray;
+                "
+                >Senin İçin Öneriler</span
+              >
+              <span
+                class="postuserfont mt-1"
+                style="font-size: 12px;float: right;"
+                ><strong>Tümünü Gör</strong></span
+              > <!-- float: right; : Tümünü gör yazıları sağa alındı. -->
+            </div>
+            <div class="mt-2 ml-2">
+              <div>
+                <span
+                  ><img
+                    src="assets/larryellison.jpg"
+                    style="width: 30px; height: 30px; border-radius: 50%"
+                  />
+                </span>
+                <a href="https://twitter.com/larryellison" target="_blank">
+                <span class="postuserfont ml-2 mt-1"
+                  ><strong>Larry Ellison</strong></span
+                >
+                <span
+                  class="postuserfont"
+                  style="font-size: 13px; color: #0095f6; margin-top: 5px;float:right"
+                  ><strong>Takip Et</strong></span
+                > <!-- float: right; : Takip et yazıları sağa alındı. -->
+                </a>
+              </div>
+              <div class="mt-3">
+                <span
+                  ><img
+                    src="assets/barckobama.jpg"
+                    style="width: 30px; height: 30px; border-radius: 50%"
+                  />
+                </span>
+                <a href="https://www.instagram.com/barackobama/" target="_blank">
+                <span class="postuserfont ml-2 mt-1"
+                  ><strong>Barack Obama </strong></span
+                >
+                <span
+                  class="postuserfont"
+                  style="font-size: 13px; color: #0095f6; margin-top: 5px;float:right"
+                  ><strong>Takip Et</strong></span
+                > <!-- float: right; : Takip et yazıları sağa alındı. -->
+                </a>
+              </div>
+              <div class="mt-3">
+                <span
+                  ><img
+                    src="assets/bernardarnault.jpg"
+                    style="width: 30px; height: 30px; border-radius: 50%"
+                  />
+                </span>
+                <a href="https://tr.wikipedia.org/wiki/Bernard_Arnault" target="_blank">
+                <span class="postuserfont ml-2 mt-1"
+                  ><strong>Bernard Arnault</strong></span
+                >
+                <span
+                  class="postuserfont"
+                  style="font-size: 13px; color: #0095f6; margin-top: 5px;float:right"
+                  ><strong>Takip Et</strong></span
+                > <!-- float: right; : Takip et yazıları sağa alındı. -->
+                </a>
+              </div>
+              <div class="mt-3">
+                    <span
+                      ><img
+                        src="assets/Conor_McGregor.jpg"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/thenotoriousmma/" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>Conor McGregor Official</strong></span
+                    >
+                    <span
+                      class="postuserfont"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px;float:right"
+                      ><strong>Takip Et</strong></span
+                    > <!-- float: right; : Takip et yazıları sağa alındı. -->
+                  </div>
+                  <div class="mt-3">
+                    <span
+                    ><img
+                      src="assets/brucelee.jpg"
+                      style="width: 30px; height: 30px; border-radius: 50%"
+                    />
+                  </span>
+                  <a href="https://www.instagram.com/brucelee/" target="_blank">
+                  <span class="postuserfont ml-2 mt-1"
+                    ><strong>Bruce Lee</strong></span
+                  >
+                  <span
+                    class="postuserfont"
+                    style="font-size: 13px; color: #0095f6; margin-top: 5px;float:right"
+                    ><strong>Takip Et</strong></span
+                  > <!-- float: right; : Takip et yazıları sağa alındı. -->
+                  </a>
+                </div>
+              </div>
+              <div class="ml-2 mt-2" style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <span><a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a> <a href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a> <a href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a> <a href="https://www.instagram.com/developer/" class="rightpanellinks">API</a> <a href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş Fırsatları</a> <a href="https://www.instagram.com/legal/privacy/" class="rightpanellinks">Gizlilik</a></span>
+                  <span><a href="https://www.instagram.com/legal/terms/" class="rightpanellinks">Koşullar</a> <a href="https://www.instagram.com/explore/locations/" class="rightpanellinks">Konumlar</a> <a href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Başlıca Hesaplar</a> <a href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu Etiketleri</a> Dil</span>
+                  <p></p>
+                <a style="font-size: 12px;" href="https://www.instagram.com/batincaylak/" class="rightpanellinks">© 2022 Instagram By Batın Çaylak</a>
+              </div>
+        </div><!-- RIGHT PANEL END !!! -->
+  </body>
+</html>
